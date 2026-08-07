@@ -12,10 +12,11 @@ on:
 
 permissions:
   actions: read
-  contents: read
+  contents: write
+  pull-requests: read
   packages: read
   security-events: write
 
 jobs:
   workflows:
-    uses: erik73/workflows/.github/workflows/base-ci.yaml@b825c628ef43b63d29c5884084db701d973a1879 # v2.0.3
+    uses: erik73/workflows/.github/workflows/app-ci.yaml@b825c628ef43b63d29c5884084db701d973a1879 # v2.0.3
