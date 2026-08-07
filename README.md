@@ -1,4 +1,4 @@
-# Home Assistant: Debian Base Images
+# Home Assistant: Debian Base Image
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
