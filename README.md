@@ -87,6 +87,7 @@ SOFTWARE.
 [github-actions-shield]: https://github.com/erik73/app-debian-base/workflows/CI/badge.svg
 [github-actions]: https://github.com/erik73/app-debian-base/actions
 [issue]: https://github.com/erik73/app-debian-base/issues
+[github-sponsors]: https://github.com/sponsors/erik73
 [label-schema]: http://label-schema.org/
 [license-shield]: https://img.shields.io/github/license/erik73/app-debian-base.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
