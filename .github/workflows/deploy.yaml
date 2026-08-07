@@ -18,8 +18,8 @@ permissions:
 
 jobs:
   ci:
-    uses: erik73/workflows/.github/workflows/base-ci.yaml@0d708a724ff0548b48e5aee5252cb33af09cc6db # v1.0.10
+    uses: erik73/workflows/.github/workflows/base-ci.yaml@6fd809e6e18800706d6efae8e8fa2995872adc42 # v1.1.1
 
   deploy:
     needs: ci
-    uses: erik73/workflows/.github/workflows/base-deploy.yaml@0d708a724ff0548b48e5aee5252cb33af09cc6db # v1.0.10
+    uses: erik73/workflows/.github/workflows/base-deploy.yaml@6fd809e6e18800706d6efae8e8fa2995872adc42 # v1.1.1
