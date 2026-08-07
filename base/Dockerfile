@@ -32,7 +32,7 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        bash=5.2.37-2+b8 \
+        bash=5.2.37-2+b9 \
         ca-certificates=20250419 \
         curl=8.14.1-2+deb13u4 \
         jq=1.7.1-6+deb13u3 \
