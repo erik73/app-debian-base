@@ -1,0 +1,9 @@
+---
+name: Debian Base Image
+version: dev
+slug: debian-base
+description: Docker Debian base images used by Home Assistant Apps.
+url: https://github.com/erik73/app-debian-base
+arch:
+  - aarch64
+  - amd64
