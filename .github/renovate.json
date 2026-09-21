@@ -1,5 +1,5 @@
 {
-  "$schema": "https://renovatebot.com",
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["helpers:pinGitHubActionDigests"],
   "schedule": ["before 2am"],
   "rebaseWhen": "behind-base-branch",
@@ -71,12 +71,6 @@
     {
       "matchDatasources": ["deb"],
       "automerge": true
-    },
-    {
-      "groupName": "OpenSSL",
-      "matchDatasources": ["deb"],
-      "automerge": true,
-      "matchPackageNames": ["libssl*", "openssl"]
     },
     {
       "groupName": "Debian base image",
