@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "$schema": "https://renovatebot.com",
   "extends": ["helpers:pinGitHubActionDigests"],
   "schedule": ["before 2am"],
   "rebaseWhen": "behind-base-branch",
@@ -54,11 +54,11 @@
       "managerFilePatterns": ["//Dockerfile$/"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "\\s\\s(?<package>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
+        "\\s\\s(?<depName>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
       ],
       "versioningTemplate": "deb",
-      "datasourceTemplate": "repology",
-      "depNameTemplate": "debian_13/{{package}}"
+      "datasourceTemplate": "deb",
+      "registryUrlTemplate": "https://debian.org{{#if suite}}{{suite}}{{else}}trixie{{/if}}&components=main&binaryArch={{#if arch}}{{arch}}{{else}}amd64{{/if}}"
     }
   ],
   "packageRules": [
@@ -69,8 +69,14 @@
       "automerge": true
     },
     {
-      "matchDatasources": ["repology"],
+      "matchDatasources": ["deb"],
       "automerge": true
+    },
+    {
+      "groupName": "OpenSSL",
+      "matchDatasources": ["deb"],
+      "automerge": true,
+      "matchPackageNames": ["libssl*", "openssl"]
     },
     {
       "groupName": "Debian base image",
