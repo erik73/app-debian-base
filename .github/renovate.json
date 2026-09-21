@@ -58,7 +58,7 @@
       ],
       "versioningTemplate": "deb",
       "datasourceTemplate": "deb",
-      "registryUrlTemplate": "https://debian.org{{#if suite}}{{suite}}{{else}}trixie{{/if}}&components=main&binaryArch={{#if arch}}{{arch}}{{else}}amd64{{/if}}"
+      "registryUrlTemplate": "https://deb.debian.org/debian?suite={{#if suite}}{{suite}}{{else}}trixie{{/if}}&components=main&binaryArch={{#if arch}}{{arch}}{{else}}amd64{{/if}}"
     }
   ],
   "packageRules": [
