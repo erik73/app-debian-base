@@ -54,11 +54,11 @@
       "managerFilePatterns": ["//Dockerfile$/"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "\\s\\s(?<depName>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
+        "\\s\\s(?<package>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
       ],
       "versioningTemplate": "deb",
-      "datasourceTemplate": "deb",
-      "registryUrlTemplate": "https://deb.debian.org"
+      "datasourceTemplate": "repology",
+      "depNameTemplate": "debian_13/{{package}}"
     }
   ],
   "packageRules": [
@@ -69,7 +69,7 @@
       "automerge": true
     },
     {
-      "matchDatasources": ["deb"],
+      "matchDatasources": ["repology"],
       "automerge": true
     },
     {
