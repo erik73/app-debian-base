@@ -71,6 +71,9 @@
     },
     {
       "matchDatasources": ["deb"],
+      "registryUrls": [
+        "https://debian.org"
+      ],
       "automerge": true
     },
     {
