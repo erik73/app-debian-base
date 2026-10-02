@@ -57,8 +57,9 @@
         "\\s\\s(?<package>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
       ],
       "versioningTemplate": "deb",
-      "datasourceTemplate": "repology",
-      "depNameTemplate": "debian_13/{{package}}"
+      "datasourceTemplate": "deb",
+      "depNameTemplate": "{{package}}",
+      "registryUrlTemplate": "https://debian.org"
     }
   ],
   "packageRules": [
@@ -69,7 +70,7 @@
       "automerge": true
     },
     {
-      "matchDatasources": ["repology"],
+      "matchDatasources": ["deb"],
       "automerge": true
     },
     {
