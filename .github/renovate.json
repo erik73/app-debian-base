@@ -72,7 +72,7 @@
     {
       "matchDatasources": ["deb"],
       "registryUrls": [
-        "https://deb.debian.org/debian?suite=stable&components=main,contrib,non-free&binaryArch=amd64"
+        "https://deb.debian.org/debian?suite=trixie&components=main,contrib,non-free&binaryArch=amd64"
       ],
       "automerge": true
     },
