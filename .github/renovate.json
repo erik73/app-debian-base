@@ -57,9 +57,8 @@
         "\\s\\s(?<package>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
       ],
       "versioningTemplate": "deb",
-      "datasourceTemplate": "deb",
-      "depNameTemplate": "{{package}}",
-      "registryUrlTemplate": "https://debian.org"
+      "datasourceTemplate": "repology",
+      "depNameTemplate": "debian_13/{{package}}"
     }
   ],
   "packageRules": [
@@ -70,12 +69,7 @@
       "automerge": true
     },
     {
-      "matchDatasources": ["deb"],
-      "registryUrls": [
-        "https://deb.debian.org/debian?suite=trixie&components=main,contrib,non-free&binaryArch=amd64",
-        "https://deb.debian.org/debian?suite=trixie-updates&components=main&binaryArch=amd64",
-        "https://deb.debian.org/debian-security?suite=trixie-security&components=main&binaryArch=amd64"
-      ],
+      "matchDatasources": ["repology"],
       "automerge": true
     },
     {
